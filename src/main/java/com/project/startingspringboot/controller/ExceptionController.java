@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 @RestControllerAdvice
-public class ErrorController
+public class ExceptionController
 {
     @ExceptionHandler(value = NullPointerException.class)
     public ResponseEntity<User> nullPointerExceptionHandler()
